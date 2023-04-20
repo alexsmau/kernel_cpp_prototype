@@ -1,1 +1,0 @@
-cmd_/home/alex/personal_sw/kernel_cpp_prototype/module/cpp_kernel.mod := printf '%s\n'   module.o kern_lib.o logger.o cpp_support.cpp.o cpp_module.cpp.o | awk '!x[$$0]++ { print("/home/alex/personal_sw/kernel_cpp_prototype/module/"$$0) }' > /home/alex/personal_sw/kernel_cpp_prototype/module/cpp_kernel.mod

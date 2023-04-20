@@ -9,7 +9,7 @@
 #include <cstdarg>
 extern "C" {
 #else
-#include <stdarg.h>
+#include <linux/stdarg.h>
 #endif
 
 void kmemset(void *dst, int c, unsigned int len);

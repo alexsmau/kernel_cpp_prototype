@@ -49,8 +49,11 @@ $(MOD_NAME).ko:
 cxx-prefix := " $(HOSTCXX) [M]  "
 
 %.cpp.o: %.cpp
+	@echo "debug 1"
 	@echo $(cxx-prefix)$@
+	@echo "debug 2"
 	@$(HOSTCXX) $(cxxflags) -c $< -o $@
+	@echo "finised the c++ compilation"
 	@echo -n > $$(dirname $@)/.$$(basename $@).cmd
 
 .PHONY: clean
